@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: top no-repeat url("images/pattern-background-mobile.svg") #dee6fe;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.card {
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(69, 59, 128, 0.25);
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 6rem auto;
+  width: 85%;
+  background-color: white;
+  display: flex;
+}
+
+.card {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+}
+
+img {
+  margin-top: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-size: 24px;
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+}
+
+.description {
+  text-align: center;
+  color: #9b9fb1;
+  width: 80%;
+  margin: 1rem auto;
+
+  line-height: 1.5;
+}
+
+button {
+  margin: 1rem auto;
+  background-color: #3921e1;
+  color: white;
+  padding: 15px 80px;
+  border-radius: 10px;
+  border: 2px solid #3921e1;
+  box-shadow: 0px 5px 15px rgba(57, 33, 225, 0.4);
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.annualPlan {
+  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.priceCard {
+  width: 80%;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.priceCard {
+  background-color: #f3f9fe;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  margin-right: 0;
+}
+
+.priceImg {
+  margin-left: 10px;
+}
+
+.changeLink {
+  color: #5946d3;
+  font-size: 0.85rem;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.plan {
+  display: flex;
+  color: hsl(223, 47%, 23%);
+  font-size: 0.9rem;
+  font-weight: bold;
+  flex-direction: column;
+  padding-right: 50px;
+  padding-left: 10px;
+}
+
+.price {
+  color: #9b9fb1;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.cancel {
+  margin-top: 10px;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #80848f;
+  font-weight: bold;
+  transtion: 0.4s;
+}
+
+.changeLink:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #736cea;
+}
+
+.button:hover {
+  cursor: pointer;
+  border-color: #736cea;
+  background-color: #736cea;
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  body {
+    background: top no-repeat url("images/pattern-background-desktop.svg")
+      #dee6fe;
+  }
+}
