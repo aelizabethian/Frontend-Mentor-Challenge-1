@@ -11,11 +11,14 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="normalize.css">    
-<link rel="stylesheet" href="styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Order summary card</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -28,49 +31,45 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
-    
   </head>
   <body>
+    <div class="card" role="main">
+      <img src="images/illustration-hero.svg" alt="woman with headphones" />
 
-    <div class="card">
-    <img src="images/illustration-hero.svg">
+      <section class="overview">
+        <h1>Order Summary</h1>
 
-    <section class="overview">
-    <h1>Order Summary</h1>
+        <p class="description">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+      </section>
 
-    <p class='description'>You can now listen to millions of songs, audiobooks, and podcasts on any
-    device anywhere you like!</p>
-  </section>
-    
+      <div class="priceCard">
+        <div class="priceImg">
+          <img src="images/icon-music.svg" alt="music icon" />
+        </div>
 
-<section class="priceCard">
-  <div class = priceImg>
-  <img src="images/icon-music.svg">
-</div>
+        <div class="plan">
+          <p class="annualPlan">Annual Plan</p>
+          <p class="price">$59.99/year</p>
+        </div>
 
-  <div class = "plan">
-    <p class="annualPlan">Annual Plan</p> 
-    <p class="price">$59.99/year</p> 
-  </div>
+        <div class="change">
+          <a href="#" class="changeLink">Change</a>
+        </div>
+      </div>
 
-  <div class = change>
-    <a href="#" class="changeLink">Change<a> 
-    </div>
-    </section>
+      <button type="submit" class="button">Proceed to Payment</button>
 
-
-    <button type="submit" class="button">Proceed to Payment</button>
-    
-    <p class="cancel">Cancel Order</p>
-
-
-
+      <p class="cancel">Cancel Order</p>
     </div>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a>. Coded by <a href="#">Amanda Richardson</a>.
-    </div>
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Amanda Richardson</a>.
+    </footer>
   </body>
 </html>
